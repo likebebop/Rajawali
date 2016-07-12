@@ -33,7 +33,7 @@ public abstract class AExampleFragment extends Fragment implements IDisplay, OnC
     protected ProgressBar mProgressBarLoader;
     protected GitHubLogoView mImageViewExampleLink;
     protected String mExampleUrl;
-    protected FrameLayout mLayout;
+    public FrameLayout mLayout;
     protected ISurface mRenderSurface;
     protected ISurfaceRenderer mRenderer;
 
@@ -136,7 +136,7 @@ public abstract class AExampleFragment extends Fragment implements IDisplay, OnC
 
     protected static abstract class AExampleRenderer extends Renderer {
 
-        final AExampleFragment exampleFragment;
+        protected final AExampleFragment exampleFragment;
 
         public AExampleRenderer(Context context, @Nullable AExampleFragment fragment) {
             super(context);
